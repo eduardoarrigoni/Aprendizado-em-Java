@@ -14,10 +14,10 @@ public class Poupanca extends conta{
     public boolean sacar(double valor){
         if (valor <= this.disponivel()){
             this.saldo -= valor;
-            System.out.println("Saque na conta " + this.numero + " realizado com sucesso. Novo saldo: " + this.saldo);
+            System.out.println("Saque na conta " + this.getNumero() + " realizado com sucesso. Novo saldo: " + this.saldo);
             return true;
         }else{
-            System.out.println("ERRO: Saque na conta " + this.numero + " nao foi realizado. Valor disponivel: " + this.saldo);
+            System.out.println("ERRO: Saque na conta " + this.getNumero() + " nao foi realizado. Valor disponivel: " + this.saldo);
             return false;
         }
 

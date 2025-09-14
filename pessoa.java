@@ -31,7 +31,7 @@ public class pessoa {
     
     public data getdtNasc(){
 
-        return this.dtNasc;
+        return dtNasc;
 
     }
     public void setCpf(String c){

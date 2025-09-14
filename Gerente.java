@@ -23,14 +23,15 @@ public class Gerente extends pessoa{
     }
     public void setSenha(){
         Scanner pass = new Scanner(System.in);
+        System.out.print("Informe sua nova senha: ");
         this.senha = pass.nextLine();
     }
     public String getSenha(){
-        return this.senha;
+        return senha;
     }
     public boolean validarAcesso(String s){
 
-        if(s.equals(getSenha())){
+        if(s.equals(this.getSenha())){
             System.out.println("Senha valida!");
             return true;
         }else{
